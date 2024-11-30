@@ -36,55 +36,98 @@ nav ul li a {
 }
 
 /* Hero Section */
-#hero {
+.place-setting {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.place-setting-container {
+  position: relative;
+  width: 800px; /* Fixed width for the container */
+  height: auto;
+}
+
+.place-setting-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative; /* Keep the plate image as the base */
+  z-index: 1;
+}
+
+.menu {
+  position: absolute;
+  top: 40%; /* Adjust percentage to fit the plate */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 50%; /* Adjust width for better balance */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2; /* Place on top of the image */
   text-align: center;
-  padding: 50px 20px;
-  background: #f4f4f4;
+}
+
+.menu h1 {
+  font-size: 1.8rem;
   color: #333;
+  margin-bottom: 10px;
 }
 
-#hero h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.menu p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
 }
 
-#hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-#hero button {
+.menu button {
   background: #007BFF;
   color: white;
-  border: none;
   padding: 10px 20px;
-  font-size: 1rem;
-  cursor: pointer;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-/* Main Sections */
-main section {
-  padding: 20px;
+.menu button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
 }
 
-/* Instagram Section */
-#instagram {
+/* About Section in the Cup */
+.cup-content {
+  position: absolute;
+  top: 15%; /* Adjust percentage to align with the cup */
+  right: 20%; /* Adjust to fit the cup */
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 50%;
   text-align: center;
-  padding: 20px;
-  background-color: #f9f9f9; /* Light background for contrast */
-  margin: 20px 0;
+  width: 120px;
+  font-size: 0.8rem;
+  z-index: 3;
 }
 
-#instagram h2 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: #333; /* Dark gray text */
-}
-
-.elfsight-app {
-  max-width: 800px; /* Optional: Limit the widget width for large screens */
-  margin: 0 auto; /* Center the widget */
+/* Contact Section in the Napkin */
+.napkin-content {
+  position: absolute;
+  bottom: 15%;
+  right: 15%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 150px;
+  font-size: 0.8rem;
+  z-index: 3;
 }
 
 /* Footer */
