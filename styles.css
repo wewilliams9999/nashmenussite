@@ -72,20 +72,18 @@ main section {
 #instagram {
   text-align: center;
   padding: 20px;
-  background-color: #f9f9f9; /* Light background */
-  margin: 20px 0; /* Space above and below the section */
+  background-color: #f9f9f9; /* Light background for contrast */
+  margin: 20px 0;
 }
 
 #instagram h2 {
-  font-size: 1.5rem; /* Larger font for the heading */
+  font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #333; /* Dark gray for text */
+  color: #333; /* Dark gray text */
 }
 
-.lightwidget-widget {
-  max-width: 800px; /* Limit the width of the widget */
-  height: auto;
-  display: block;
+.elfsight-app {
+  max-width: 800px; /* Optional: Limit the widget width for large screens */
   margin: 0 auto; /* Center the widget */
 }
 
