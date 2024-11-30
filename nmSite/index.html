@@ -3,35 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NashMenus</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Add CSS later -->
+  <title>Nashville Menus</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
   <header>
-    <h1>NashMenus</h1>
+    <h1>Nashville Menus</h1>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#quiz">Find Restaurants</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#quiz">Quiz</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
-  
+
   <section id="hero">
-    <h2>Find Your Perfect Nashville Restaurant</h2>
+    <h2>Welcome to Nashville Menus</h2>
+    <p>Nashville is packed with amazing restaurants, but choosing one can be overwhelming! Let us take the stress off your plate.</p>
     <button onclick="location.href='#quiz'">Start Quiz</button>
   </section>
-  
-  <section id="quiz">
-    <h3>Restaurant Quiz</h3>
-    <p>Answer a few quick questions to get personalized recommendations!</p>
-    <!-- Quiz content will go here -->
-  </section>
-  
+
+  <main>
+    <section id="about">
+      <h2>About Nashville Menus</h2>
+      <p>Your Nashville Restaurant Recommender</p>
+    </section>
+
+    <section id="quiz">
+      <h2>Find Your Restaurant</h2>
+      <p>Answer a few quick questions to get a personalized recommendation!</p>
+    </section>
+  </main>
+
   <footer>
-    <p>© 2024 NashvilleMenus | Follow us on <a href="#">Instagram</a></p>
-  </footer>
+    <section id="instagram">
+      <h2>Follow Us on Instagram</h2>
+      <!-- LightWidget WIDGET -->
+      <iframe src="//lightwidget.com/widgets/387da847437a5bc2bfa7221a31320768.html" 
+              scrolling="no" 
+              allowtransparency="true" 
+              class="lightwidget-widget" 
+              style="width:100%;border:0;overflow:hidden;"></iframe>
+      <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+    </section>
+    <p>© 2024 NashvilleMenus</p>
+  </footer>  
 </body>
 </html>
