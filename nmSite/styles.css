@@ -68,9 +68,32 @@ main section {
   padding: 20px;
 }
 
-footer {
+/* Instagram Section */
+#instagram {
   text-align: center;
-  padding: 1rem;
-  background: black;
-  color: white;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background */
+  margin: 20px 0; /* Space above and below the section */
+}
+
+#instagram h2 {
+  font-size: 1.5rem; /* Larger font for the heading */
+  margin-bottom: 15px;
+  color: #333; /* Dark gray for text */
+}
+
+.lightwidget-widget {
+  max-width: 800px; /* Limit the width of the widget */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the widget */
+}
+
+/* Footer */
+footer p {
+  text-align: center;
+  padding: 10px;
+  background-color: #333; /* Dark background for footer */
+  color: white; /* White text for contrast */
+  margin: 0; /* Remove default margin */
 }
