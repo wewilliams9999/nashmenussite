@@ -40,7 +40,7 @@ nav ul li a {
   position: relative;
   width: 100vw; /* Full width of the viewport */
   height: 100vh; /* Full height of the viewport */
-  background: url('images/place-setting.png') no-repeat center; /* Centers the image */
+  background: url('./images/place-setting.png') no-repeat center; /* Centers the image */
   background-size: 52%; /* Keeps the zoom level */
   background-position: center 120%; /* Moves the image down to show more of the plate */
   display: flex;
