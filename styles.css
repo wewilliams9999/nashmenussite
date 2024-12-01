@@ -38,12 +38,16 @@ nav ul li a {
 /* Hero Section */
 .place-setting {
   position: relative;
-  height: 100vh;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  background: url('images/place-setting.png') no-repeat center; /* Centers the image */
+  background-size: 52%; /* Keeps the zoom level */
+  background-position: center 120%; /* Moves the image down to show more of the plate */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f9f9f9;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
 }
+
 
 .place-setting-container {
   position: relative;
@@ -73,57 +77,59 @@ nav ul li a {
   text-align: center;
 }
 
-.menu h1 {
-  font-size: 1.8rem;
+/* Updated Menu Styling */
+.menu-title {
+  font-size: 2.5rem; /* Larger and bold text for the title */
   color: #333;
   margin-bottom: 10px;
 }
 
-.menu p {
-  font-size: 1rem;
+.menu-description {
+  font-size: 1.2rem; /* Keep text readable and balanced */
   color: #555;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
-.menu button {
-  background: #007BFF;
+.menu-button {
+  background: #ff7f50; /* Coral color for vibrance */
   color: white;
-  padding: 10px 20px;
+  padding: 12px 25px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 0.9rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  font-size: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.menu button:hover {
-  background: #0056b3;
+.menu-button:hover {
+  background: #e0693b; /* Slightly darker coral for hover */
   transform: scale(1.05);
 }
 
 /* About Section in the Cup */
 .cup-content {
   position: absolute;
-  top: 15%; /* Adjust percentage to align with the cup */
-  right: 20%; /* Adjust to fit the cup */
-  background: rgba(255, 255, 255, 0.8);
+  top: 10%; /* Adjust to fit the cup */
+  right: 10%; /* Position relative to the image */
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
   padding: 10px;
-  border-radius: 50%;
+  border-radius: 50%; /* Circular style for the cup */
   text-align: center;
-  width: 120px;
+  width: 100px; /* Size matches the cup */
+  z-index: 3; /* Above the image */
   font-size: 0.8rem;
-  z-index: 3;
 }
 
-/* Contact Section in the Napkin */
+/* Contact Section on Napkin */
 .napkin-content {
   position: absolute;
-  bottom: 15%;
-  right: 15%;
-  background: rgba(255, 255, 255, 0.8);
+  bottom: 10%; /* Adjust to fit the napkin */
+  right: 20%; /* Align with the napkin location */
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
   padding: 10px 15px;
-  border-radius: 8px;
+  border-radius: 8px; /* Slight rounding for napkin */
   text-align: center;
   max-width: 150px;
   font-size: 0.8rem;
