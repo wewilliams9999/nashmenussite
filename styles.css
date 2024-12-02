@@ -38,109 +38,47 @@ nav ul li a {
 /* Hero Section */
 .place-setting {
   position: relative;
-  width: 100vw; /* Full width of the viewport */
-  height: 100vh; /* Full height of the viewport */
-  background: url('./images/place-setting.png') no-repeat center; /* Centers the image */
-  background-size: 52%; /* Keeps the zoom level */
-  background-position: center 120%; /* Moves the image down to show more of the plate */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Ensure no overflow */
   display: flex;
   justify-content: center; /* Centers the content horizontally */
   align-items: center; /* Centers the content vertically */
 }
 
-
-.place-setting-container {
-  position: relative;
-  width: 800px; /* Fixed width for the container */
-  height: auto;
-}
-
-.place-setting-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  position: relative; /* Keep the plate image as the base */
-  z-index: 1;
-}
-
-.menu {
+.background-video {
   position: absolute;
-  top: 40%; /* Adjust percentage to fit the plate */
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background: white;
-  width: 50%; /* Adjust width for better balance */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 2; /* Place on top of the image */
+  width: auto;
+  height: 100%; /* Adjust to fit the height of the screen */
+  transform: translate(-50%, -50%); /* Center the video */
+  object-fit: contain; /* Ensure the video fits within the viewport without cropping */
+  z-index: -1; /* Send the video behind the content */
+  background-color: #f8f9fa; /* Fallback background color */
+}
+
+
+
+
+/* Main Content Sections */
+#about, #quiz {
+  padding: 50px 20px;
+  background-color: #fefefe; /* Light background for readability */
   text-align: center;
-}
-
-/* Updated Menu Styling */
-.menu-title {
-  font-size: 2.5rem; /* Larger and bold text for the title */
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.menu-description {
-  font-size: 1.2rem; /* Keep text readable and balanced */
-  color: #555;
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.menu-button {
-  background: #ff7f50; /* Coral color for vibrance */
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.menu-button:hover {
-  background: #e0693b; /* Slightly darker coral for hover */
-  transform: scale(1.05);
-}
-
-/* About Section in the Cup */
-.cup-content {
-  position: absolute;
-  top: 10%; /* Adjust to fit the cup */
-  right: 10%; /* Position relative to the image */
-  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-  padding: 10px;
-  border-radius: 50%; /* Circular style for the cup */
-  text-align: center;
-  width: 100px; /* Size matches the cup */
-  z-index: 3; /* Above the image */
-  font-size: 0.8rem;
-}
-
-/* Contact Section on Napkin */
-.napkin-content {
-  position: absolute;
-  bottom: 10%; /* Adjust to fit the napkin */
-  right: 20%; /* Align with the napkin location */
-  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-  padding: 10px 15px;
-  border-radius: 8px; /* Slight rounding for napkin */
-  text-align: center;
-  max-width: 150px;
-  font-size: 0.8rem;
-  z-index: 3;
 }
 
 /* Footer */
-footer p {
+footer {
+  background-color: #f8f9fa; /* Light background */
+  padding: 20px 0;
   text-align: center;
-  padding: 10px;
-  background-color: #333; /* Dark background for footer */
-  color: white; /* White text for contrast */
-  margin: 0; /* Remove default margin */
+}
+
+footer section {
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
 }
