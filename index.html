@@ -34,26 +34,64 @@
 
     <section id="quiz">
       <h2>Find Your Perfect Restaurant</h2>
-      
-      <!-- Question 1 -->
+    
+      <!-- Step 1: Map with Buttons -->
       <div class="quiz-step" id="step-1">
         <p>Select a Neighborhood:</p>
-        <div id="neighborhood-buttons">
-          <button type="button" class="neighborhood-button" data-value="Downtown">Downtown</button>
-          <button type="button" class="neighborhood-button" data-value="North Nashville">North Nashville</button>
-          <button type="button" class="neighborhood-button" data-value="East Nashville">East Nashville</button>
-          <button type="button" class="neighborhood-button" data-value="West Nashville">West Nashville</button>
-          <button type="button" class="neighborhood-button" data-value="Antioch">Antioch</button>
-          <button type="button" class="neighborhood-button" data-value="Midtown">Midtown</button>
-          <button type="button" class="neighborhood-button" data-value="The Gulch">The Gulch</button>
-          <button type="button" class="neighborhood-button" data-value="12 South">12 South</button>
-          <button type="button" class="neighborhood-button" data-value="Brentwood">Brentwood</button>
-          <button type="button" class="neighborhood-button" data-value="Cool Springs">Cool Springs</button>
-          <button type="button" class="neighborhood-button" data-value="Franklin">Franklin</button>
+        <div class="geographical-buttons">
+          <!-- North -->
+          <div class="region north">
+            <h3>North</h3>
+            <button type="button" class="neighborhood-button" data-value="North Nashville">North Nashville</button>
+            <button type="button" class="neighborhood-button" data-value="Madison">Madison</button>
+          </div>
+        
+          <!-- Central -->
+          <div class="region central">
+            <h3>Central</h3>
+            <button type="button" class="neighborhood-button" data-value="Downtown">Downtown</button>
+            <button type="button" class="neighborhood-button" data-value="Midtown">Midtown</button>
+            <button type="button" class="neighborhood-button" data-value="The Gulch">The Gulch</button>
+            <button type="button" class="neighborhood-button" data-value="Green Hills">Green Hills</button>
+          </div>
+        
+          <!-- East -->
+          <div class="region east">
+            <h3>East</h3>
+            <button type="button" class="neighborhood-button" data-value="East Nashville">East Nashville</button>
+            <button type="button" class="neighborhood-button" data-value="Mount Juliet">Mount Juliet</button>
+          </div>
+        
+          <!-- South -->
+          <div class="region south">
+            <h3>South</h3>
+            <button type="button" class="neighborhood-button" data-value="12 South">12 South</button>
+            <button type="button" class="neighborhood-button" data-value="Brentwood">Brentwood</button>
+            <button type="button" class="neighborhood-button" data-value="Cool Springs">Cool Springs</button>
+            <button type="button" class="neighborhood-button" data-value="Franklin">Franklin</button>
+            <button type="button" class="neighborhood-button" data-value="Antioch">Antioch</button>
+          </div>
+        
+          <!-- West -->
+          <div class="region west">
+            <h3>West</h3>
+            <button type="button" class="neighborhood-button" data-value="West Nashville">West Nashville</button>
+          </div>
+        </div>
+        
+      </div>
+    
+      <!-- Step 2: Distance Question -->
+      <div class="quiz-step" id="step-2" style="display: none;">
+        <p>How far are you willing to travel?</p>
+        <div id="distance-buttons">
+          <button type="button" class="distance-button" data-value="2000">Nearby (close to home)</button>
+          <button type="button" class="distance-button" data-value="10000">I don’t mind a short drive</button>
+          <button type="button" class="distance-button" data-value="30000">Up for an adventure</button>
         </div>
       </div>
-      
-      <!-- Question 2 -->
+    
+      <!-- Step 3: Budget Question -->
       <div class="quiz-step" id="step-3" style="display: none;">
         <p>What's your budget?</p>
         <div id="budget-buttons">
@@ -63,16 +101,17 @@
         </div>
       </div>
     
-      <!-- Question 3 -->
+      <!-- Step 4: Cuisine Question -->
       <div class="quiz-step" id="step-4" style="display: none;">
         <p>What cuisine are you craving?</p>
         <input type="text" id="cuisine" placeholder="e.g., BBQ, Italian">
         <button type="button" id="submit-cuisine">Submit</button>
       </div>
     
+      <!-- Results Section -->
       <div id="result"></div>
     </section>
-  
+    
   </main>
 
   <footer>
