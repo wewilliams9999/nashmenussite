@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nashville Menus</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="quiz.js"></script>
 </head>
 <body>
   <header>
@@ -24,8 +25,6 @@
         Your browser does not support the video tag.
     </video>
 </section>
-
-
    
     <main>
     <section id="about">
@@ -34,9 +33,46 @@
     </section>
 
     <section id="quiz">
-      <h2>Find Your Restaurant</h2>
-      <p>Answer a few quick questions to get a personalized recommendation!</p>
+      <h2>Find Your Perfect Restaurant</h2>
+      
+      <!-- Question 1 -->
+      <div class="quiz-step" id="step-1">
+        <p>Select a Neighborhood:</p>
+        <div id="neighborhood-buttons">
+          <button type="button" class="neighborhood-button" data-value="Downtown">Downtown</button>
+          <button type="button" class="neighborhood-button" data-value="North Nashville">North Nashville</button>
+          <button type="button" class="neighborhood-button" data-value="East Nashville">East Nashville</button>
+          <button type="button" class="neighborhood-button" data-value="West Nashville">West Nashville</button>
+          <button type="button" class="neighborhood-button" data-value="Antioch">Antioch</button>
+          <button type="button" class="neighborhood-button" data-value="Midtown">Midtown</button>
+          <button type="button" class="neighborhood-button" data-value="The Gulch">The Gulch</button>
+          <button type="button" class="neighborhood-button" data-value="12 South">12 South</button>
+          <button type="button" class="neighborhood-button" data-value="Brentwood">Brentwood</button>
+          <button type="button" class="neighborhood-button" data-value="Cool Springs">Cool Springs</button>
+          <button type="button" class="neighborhood-button" data-value="Franklin">Franklin</button>
+        </div>
+      </div>
+      
+      <!-- Question 2 -->
+      <div class="quiz-step" id="step-3" style="display: none;">
+        <p>What's your budget?</p>
+        <div id="budget-buttons">
+          <button type="button" class="budget-button" data-value="1">$</button>
+          <button type="button" class="budget-button" data-value="2">$$</button>
+          <button type="button" class="budget-button" data-value="3">$$$</button>
+        </div>
+      </div>
+    
+      <!-- Question 3 -->
+      <div class="quiz-step" id="step-4" style="display: none;">
+        <p>What cuisine are you craving?</p>
+        <input type="text" id="cuisine" placeholder="e.g., BBQ, Italian">
+        <button type="button" id="submit-cuisine">Submit</button>
+      </div>
+    
+      <div id="result"></div>
     </section>
+  
   </main>
 
   <footer>
@@ -47,6 +83,9 @@
     </section>    
     <p>© 2024 NashvilleMenus</p>
   </footer>
-  
+
+  <script src="quiz.js"></script>
+
+
 </body>
 </html>
